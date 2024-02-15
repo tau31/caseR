@@ -1,0 +1,11 @@
+Package: caseR
+Title: Package With Functions to Fix Names in different objects
+Version: 0.0.0.9000
+Authors@R: 
+    person("Tiago", "Cabaço", , "tau31@pm.me", role = c("aut", "cre"))
+Description: Provides a simple function that converts strings into different cases for different R objects
+  (ideally without any dependencies other then base R).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
