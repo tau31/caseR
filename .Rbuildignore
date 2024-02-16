@@ -1,3 +1,5 @@
 ^namefix\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
+^dev-notes.md$
+^.editorconfig$

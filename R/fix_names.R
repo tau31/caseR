@@ -1,8 +1,12 @@
-# Available cases to work with
-# . Also called caterpillar-case, dash-case, hyphen-case, lisp-case, spinal-case and css-case
-# PascalCase or CapitalCamelCase
-# CONSTANT_CASE, MACRO_CASE, UPPER_CASE or SCREAM_CASE
-# COBOL-CASE or TRAIN-CASE
+# Consider logic in https://github.com/rutrum/convert-case/blob/master/src/case.rs#L31
+# E.g.: Title case:
+# * Boundaries: [Space](`Boundary::Space`)
+# * Pattern: [Uppercase](`Pattern::Uppercase`)
+# * Delimeter: Space
+
+# TODO:
+#* CapitalCamelCase
+#* CONSTANT_CASE,
 
 fix_names <- function(x, case) {
   UseMethod("fix_names")
@@ -66,4 +70,12 @@ to_camel <- function(x) {
   new <- tolower(x)
   new <- gsub(" ", "", new)
   return(new)
+}
+
+from_case <- function() {
+  # provides word delimiter + boundary based on case
+}
+
+to_case <- function() {
+  # provides formula to convert to a case based on the original case (which can be a default)
 }
